@@ -42,6 +42,7 @@ vim.keymap.set('n', '<A-4>', ':BufferLineGoToBuffer 4<CR>')
 vim.keymap.set('n', '<leader>c', '<cmd>Telescope lsp_implementations<CR>') -- check implementation
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action)  -- code actions
 vim.keymap.set('n', '<leader>gd', '<cmd>Telescope lsp_definitions<CR>')     -- go to definition
+vim.keymap.set('n', '<leader>cd', vim.diagnostic.open_float) -- show line diagnostics
 
 -- linting
 vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format)
